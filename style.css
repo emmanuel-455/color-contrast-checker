@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #3277f6;
+  }
+  .container {
+    position: absolute;
+    width: 90%;
+    max-width: 37.5em;
+    background-color: #ffffff;
+    border-radius: 0.8em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3em;
+  }
+  .input-colors {
+    display: flex;
+    justify-content: space-between;
+  }
+  .color-container {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 7em;
+    height: 7em;
+    border: none;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 0.5em;
+    border: 0.5em solid #c7c7c7;
+  }
+  input[type="color"]:-moz-color-swatch {
+    border-radius: 0.5em;
+    border: 0.5em solid #c7c7c7;
+  }
+  .result {
+    margin-top: 1em;
+  }
+  #preview {
+    padding: 1.5em;
+    line-height: 1.8em;
+    text-align: center;
+    border-radius: 0.5em;
+  }
+  #contrast {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+  }
+  #rating {
+    text-align: center;
+    padding: 0.8em 0;
+    border-radius: 0.5em;
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      font-size: 0.9em;
+    }
+    input[type="color"] {
+      font-size: 0.8em;
+    }
+  }
