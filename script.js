@@ -57,9 +57,6 @@ let contrastChecker = () => {
   let bgColorValue = bgColor.value;
   let bgColorRGBArray = hexToRGB(bgColorValue);
 
-  //   console.log(textColorValue, textColorRGBArray);
-  //   console.log(bgColorValue, bgColorRGBArray);
-
   const contrast = calculateContrastRatio(textColorRGBArray, bgColorRGBArray);
 
   contrastRef.innerText = contrast.toFixed(2);
