@@ -1,11 +1,11 @@
-//Initial References
+
 let textColor = document.getElementById("text-color");
 let bgColor = document.getElementById("bg-color");
 let previewText = document.getElementById("preview");
 let contrastRef = document.getElementById("contrast");
 let rating = document.getElementById("rating");
 
-//Function to convert hex value to RGB array
+
 function hexToRGB(colorValue) {
   const red = parseInt(colorValue.substring(1, 3), 16);
   const green = parseInt(colorValue.substring(3, 5), 16);
