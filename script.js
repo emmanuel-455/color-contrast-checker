@@ -30,7 +30,7 @@ let calculateContrastRatio = (color1, color2) => {
   const contrast = (light + 0.05) / (dark + 0.05);
   return contrast;
 };
-
+//cvc
 let calcRating = (contrastVal) => {
   if (contrastVal > 12) {
     rating.style.backgroundColor = "#69eb67";
